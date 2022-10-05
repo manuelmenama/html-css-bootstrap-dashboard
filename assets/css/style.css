@@ -1,5 +1,11 @@
 /* GENERAL */
+body{
+    font-family: 'Roboto', sans-serif;
+}
 /* UTILITIES */
 /* HEADER */
 /* ASIDE */
+aside{
+    font-family: 'Poppins', sans-serif;
+}
 /* MAIN */
