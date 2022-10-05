@@ -12,6 +12,9 @@
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
+    <!-- font awesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous'/>
+
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,52 +28,65 @@
 
     <!-- HEADER -->
     <header class="bg-light">
-        <nav class="navbar ">
-            <div class="container-fluid d-flex mx-2 alt-header-bg h-100">
-                <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.svg" alt="boolean logo">
-                </a>
-                <form class="d-flex w-75" role="search">
-                    <input class="form-control" type="text" placeholder="ciao">
-                </form>
-                <ul class="alt-d-flex alt-ul-remove h-100 align-items-center m-0">
-                  <li>
-                    <a href="#">icon</a>
-                  </li>
-                  <li>
-                    <a href="#">icon</a>
-                  </li>
-                  <li>
-                    <a href="#">icon</a>
-                  </li>
-                  <li>
-                    <a href="#">icon</a>
-                  </li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="container-fluid d-flex mx-2 alt-header-bg h-100">
+          <a class="navbar-brand d-lg-none alt-remain-width" href="#">
+            <img src="assets/img/mobile-logo.png" alt="boolean logo">
+          </a>
+          <a class="navbar-brand d-none d-lg-inline-block alt-remain-width" href="#">
+            <img src="assets/img/logo.svg" alt="boolean logo">
+          </a>
+          <form class="alt-form-width px-1">
+            <input class="w-100" type="text" placeholder="ciao">
+          </form>
+          <ul class="alt-d-flex alt-ul-remove h-100 align-items-center m-0 p-0 alt-remain-width">
+            <li>
+              <a href="#">icon</a>
+            </li>
+            <li class="d-none d-md-inline-block">
+             <a href="#">icon</a>
+            </li>
+            <li class="d-none d-md-inline-block">
+              <a href="#">icon</a>
+            </li>
+            <li class="d-none d-md-inline-block">
+              <a href="#">icon</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <div class="container-fluid">
       <div class="row">
         <!-- ASIDE -->
-        <aside class="col-1 d-flex flex-column justify-content-between">
-          <nav>
-            <ul class="alt-ul-remove">
+        <aside class="col-1 d-flex flex-column justify-content-between align-items-center">
+          <ul class="alt-ul-remove p-0">
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span class="d-none d-lg-inline-block">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-chart-simple"></i>
+                <span class="d-none d-lg-inline-block">Stats</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-signal"></i>
+                <span class="d-none d-lg-inline-block">Signals</span>
+              </a>
+            </li>
+          </ul>
+          <div class="alt-aside-bottom">
+            <ul class="p-0">
               <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Stats</a>
-              </li>
-              <li>
-                <a href="#">Signals</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="alt-adide-bottom">
-            <ul>
-              <li>
-                <a href="#">Admin</a>
+                <a href="#">
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="d-none d-lg-inline-block">Admin</span>
+                </a>
               </li>
             </ul>
           </div>

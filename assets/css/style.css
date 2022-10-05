@@ -2,6 +2,11 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+img{
+    max-width: 100%;
+}
+
 /* UTILITIES */
 /* debug */
 .debug{
@@ -26,6 +31,10 @@ header{
     height: 55px;
 }
 
+header nav div a:nth-child(1){
+    width: 32px;
+}
+
 header ul li a{
     text-decoration: none;
 }
@@ -33,19 +42,41 @@ header ul li a{
 .alt-header-bg{
     background-color: white;
 }
+
+.alt-form-width{
+    width: calc(80% - 1rem);
+}
+
+.alt-remain-width{
+    width: 10%;
+}
 /* ASIDE */
 aside{
     font-family: 'Poppins', sans-serif;
     height: calc(100vh - 55px);
     background-color: rgb(5, 30, 52);
+    overflow: hidden;
 }
+
 
 aside ul li a{
     text-decoration: none;
+    font-size: 0.75rem;
+}
+
+aside ul li a i{
+    margin-right: 5px;
+    font-size: large;
 }
 
 /* MAIN */
 main{
     height: calc(100vh - 55px);
     overflow: auto;
+}
+
+main img{
+    max-width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
 }
