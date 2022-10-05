@@ -80,3 +80,7 @@ main img{
     object-fit: cover;
     border-radius: 50%;
 }
+
+.alt-badge-text-size{
+    font-size: 0.9rem;
+}
