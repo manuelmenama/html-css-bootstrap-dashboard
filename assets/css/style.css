@@ -3,9 +3,49 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 /* UTILITIES */
+/* debug */
+.debug{
+    background-color: coral;
+    border: 1px solid black;
+}
+
+.alt-d-flex{
+    display: flex;
+}
+
+.alt-ul-remove{
+    list-style: none;
+}
+
+.alt-a-remove{
+    text-decoration: none;
+}
+
 /* HEADER */
+header{
+    height: 55px;
+}
+
+header ul li a{
+    text-decoration: none;
+}
+
+.alt-header-bg{
+    background-color: white;
+}
 /* ASIDE */
 aside{
     font-family: 'Poppins', sans-serif;
+    height: calc(100vh - 55px);
+    background-color: rgb(5, 30, 52);
 }
+
+aside ul li a{
+    text-decoration: none;
+}
+
 /* MAIN */
+main{
+    height: calc(100vh - 55px);
+    overflow: auto;
+}
