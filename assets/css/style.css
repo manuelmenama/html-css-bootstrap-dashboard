@@ -97,7 +97,7 @@ main{
 
 /* prossime classi section */
 main .alt-small-offcanvas{
-    display: block !important;
+    display: inline-block;
 }
 
 main .alt-class-section img{
@@ -134,10 +134,10 @@ main .alt-card-img-section img{
 /* media quary */
 @media screen and (min-width: 768px) {
     main .alt-offcanvas{
-        display: inline-block !important;
+        display: inline-block;
     }
     main .alt-small-offcanvas{
-        display: none !important;
+        display: none;
     }
 }
 

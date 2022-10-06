@@ -152,10 +152,11 @@
                   <!-- offcanvas -->
                   <h5 class="card-header d-flex justify-content-between">
                     Prossime Classi
-                    <button class="btn btn-outline-primary fs-3 alt-dim-btn d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">&plus;</button>
+                    <button id="alt-offcanvas" class="btn btn-outline-primary d-none d-md-flex fs-3 alt-dim-btn d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">&plus;</button>
+                    <button id="alt-small-offcanvas" class="btn btn-outline-primary d-md-none fs-3 alt-dim-btn d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2">&plus;</button>
                   </h5>
                   <!-- offcanvas start -->
-                  <div class="alt-offcanvas offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                       <h5 class="offcanvas-title" id="offcanvasRightLabel">Form</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -216,23 +217,23 @@
                     </div>
                   </div>
                   <!-- offcanvas alternativo -->
-                  <div class="alt-small-offcanvas offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRight2Label">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Form</h5>
+                      <h5 class="offcanvas-title" id="offcanvasRight2Label">Form</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <!-- offcanvas body -->
                     <div class="offcanvas-body">
                       <form id="alt-form" class="container">
                         <div class="row">
-                          <div class="col-6 mb-3">
+                          <div class="col-12 mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <div class="input-group flex-nowrap">
                               <span class="input-group-text" id="addon-wrapping">@</span>
                               <input type="text" class="form-control" aria-label="Email address" aria-describedby="addon-wrapping">
                             </div>
                           </div>
-                          <div class="col-6 mb-3">
+                          <div class="col-12 mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
                           </div>
@@ -240,11 +241,11 @@
                             <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1">
                           </div>
-                          <div class="col-6 mb-3">
+                          <div class="col-12 mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Citt&agrave;</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1">
                           </div>
-                          <div class="col-4 mb-3">
+                          <div class="col-12 mb-3">
                             <label for="validationCustom04" class="form-label">Provincia</label>
                             <select class="form-select" id="validationCustom04" required>
                               <option selected disabled value="">Choose...</option>
@@ -258,7 +259,7 @@
                               Please select a valid state.
                             </div>
                           </div>
-                          <div class="col-2 mb-3">
+                          <div class="col-12 mb-3">
                             <label for="exampleFormControlInput1" class="form-label">CAP</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1">
                           </div>
