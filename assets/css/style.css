@@ -50,14 +50,34 @@ header ul li a{
 .alt-remain-width{
     width: 10%;
 }
+
+header nav form{
+    height: 100%;
+}
+
+header nav form input{
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
+    border-radius: 4px;
+    height: 100%;
+    padding-left: 25px;
+}
+
+header nav form .alt-in-search-bar{
+    float: left;
+    position: relative;
+    margin-top: -25px;
+    margin-left: 5px;
+    z-index: 2;
+}
+
 /* ASIDE */
 aside{
     font-family: 'Poppins', sans-serif;
     height: calc(100vh - 55px);
     background-color: rgb(5, 30, 52);
-    overflow: hidden;
+    background-image: url(../img/sidebar-bg.png);
 }
-
 
 aside ul li a{
     text-decoration: none;
@@ -75,12 +95,20 @@ main{
     overflow: auto;
 }
 
-main img{
-    max-width: 30px;
+/* prossime classi section */
+main .alt-class-section img{
+    width: 30px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .alt-badge-text-size{
     font-size: 0.9rem;
+}
+
+/* section whit accordion */
+/* todo list section */
+/* card and image section */
+main .alt-card-img-section img{
+    width: 100%;
 }
