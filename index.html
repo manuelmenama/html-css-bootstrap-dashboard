@@ -57,8 +57,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
-                <a href="#" class="text-warning">
+              <a href="#" class="text-warning shadow-sm">
                 <i class="fa-solid fa-bell"></i>
               </a>
             </li>
@@ -132,17 +131,17 @@
             <div class="row">
               <!-- prossime classi section -->
               <div class="col-12 col-lg-8">
-                <div class="card my-3 alt-class-section">
+                <div class="card my-3 alt-class-section w-100">
                   <h5 class="card-header">Prossime Classi</h5>
-                  <div class="card-body">
-                    <table class="table">
+                  <div class="card-body w-100">
+                    <table class="table table-hover w-100">
                       <thead>
-                        <tr>
-                          <th scope="col">Nome</th>
-                          <th class="d-none d-md-table-cell" scope="col">Data inizio</th>
-                          <th class="d-none d-md-table-cell" scope="col">ROI</th>
-                          <th scope="col">Stato</th>
-                          <th scope="col">Azioni</th>
+                        <tr class="w-100">
+                          <th class="alt-width-big" scope="col">Nome</th>
+                          <th class="d-none d-md-table-cell alt-width-small" scope="col">Data inizio</th>
+                          <th class="d-none d-md-table-cell alt-width-small" scope="col">ROI</th>
+                          <th class="alt-width-small" scope="col">Stato</th>
+                          <th class="alt-width-small" scope="col">Azioni</th>
                         </tr>
                       </thead>
                       <tbody class="table-group-divider">
@@ -156,7 +155,14 @@
                           <td>
                             <span class="badge text-bg-success">Done</span>
                           </td>
-                          <td>@mdo</td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -168,7 +174,14 @@
                           <td>
                             <span class="badge text-bg-warning">Process</span>
                           </td>
-                          <td>@mdo</td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -180,7 +193,14 @@
                           <td>
                             <span class="badge text-bg-success">Done</span>
                           </td>
-                          <td>@mdo</td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -192,7 +212,14 @@
                           <td>
                             <span class="badge text-bg-success">Done</span>
                           </td>
-                          <td>@mdo</td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -204,7 +231,14 @@
                           <td>
                             <span class="badge text-bg-success">Done</span>
                           </td>
-                          <td>@mdo</td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -216,7 +250,14 @@
                           <td>
                             <span class="badge text-bg-warning">Process</span>
                           </td>
-                          <td>@mdo</td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -228,7 +269,14 @@
                           <td>
                             <span class="badge text-bg-success">Done</span>
                           </td>
-                          <td>@mdo</td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
                           <td>
@@ -240,7 +288,14 @@
                           <td>
                             <span class="badge text-bg-danger">Failed</span>
                           </td>
-                          <td>@mdo</td>
+                          <td>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -291,7 +346,7 @@
               <div class="col-12 col-lg-4">
                 <div class="card my-3">
                   <h5 class="card-header">Featured</h5>
-                  <div class="card">
+                  <div class="card m-3">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">
                         <div class="form-check">
