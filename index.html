@@ -9,6 +9,10 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js' integrity='sha512-5BqtYqlWfJemW5+v+TZUs22uigI8tXeVah5S/1Z6qBLVO7gakAOtkOzUtgq6dsIo5c0NJdmGPs0H9I+2OHUHVQ==' crossorigin='anonymous'></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
@@ -57,9 +61,17 @@
               </a>
             </li>
             <li>
-              <a href="#" class="text-warning shadow-sm">
-                <i class="fa-solid fa-bell"></i>
-              </a>
+              <div class="dropdown dropstart">
+                <a class="text-warning shadow-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-bell"></i>
+                </a>
+              
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Preference</a></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -125,14 +137,79 @@
                 </p>
               </div>
             </div>
-            
           </div>
           <div class="container">
             <div class="row">
-              <!-- prossime classi section -->
+              <!-- colonne da 8-->
               <div class="col-12 col-lg-8">
+                <!-- card whit table -->
                 <div class="card my-3 alt-class-section w-100">
-                  <h5 class="card-header">Prossime Classi</h5>
+                  <!-- offcanvas -->
+                  <h5 class="card-header d-flex justify-content-between">
+                    Prossime Classi
+                    <button class="btn btn-outline-primary fs-3 alt-dim-btn d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">&plus;</button>
+                  </h5>
+                  <!-- offcanvas start -->
+                  <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Form</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!-- offcanvas body -->
+                    <div class="offcanvas-body">
+                      <form class="container">
+                        <div class="row">
+                          <div class="col-6 mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <div class="input-group flex-nowrap">
+                              <span class="input-group-text" id="addon-wrapping">@</span>
+                              <input type="text" class="form-control" aria-label="Email address" aria-describedby="addon-wrapping">
+                            </div>
+                          </div>
+                          <div class="col-6 mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="col-12 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                          </div>
+                          <div class="col-6 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Citt&agrave;</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                          </div>
+                          <div class="col-4 mb-3">
+                            <label for="validationCustom04" class="form-label">Provincia</label>
+                            <select class="form-select" id="validationCustom04" required>
+                              <option selected disabled value="">Choose...</option>
+                              <option>Latina</option>
+                              <option>Latina</option>
+                              <option>Latina</option>
+                              <option>Latina</option>
+                              <option>Only Latina</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              Please select a valid state.
+                            </div>
+                          </div>
+                          <div class="col-2 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">CAP</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                          </div>
+                          <div class="col-12 mb-3">
+                            <label for="formFile" class="form-label">Seleziona foto</label>
+                            <input class="form-control" type="file" id="formFile">
+                          </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                        <button type="submit" class="btn btn-warning">Svuota</button>
+                      </form>
+                    </div>
+                  </div>
                   <div class="card-body w-100">
                     <table class="table table-hover w-100">
                       <thead>
@@ -301,9 +378,7 @@
                     </table>
                   </div>
                 </div>
-              </div>
-              <!-- section whit accordion -->
-              <div class="col-12 col-lg-8">
+                <!-- faq section -->
                 <div class="card my-3">
                   <h5 class="card-header">F.A.Q.</h5>
                   <div class="card-body">
@@ -342,8 +417,9 @@
                   </div>
                 </div>
               </div>
-              <!-- todo list section -->
+              <!-- colonne da 4 -->
               <div class="col-12 col-lg-4">
+                <!-- card with checkbox -->
                 <div class="card my-3">
                   <h5 class="card-header">Featured</h5>
                   <div class="card m-3">
@@ -375,9 +451,7 @@
                     </ul>
                   </div>
                 </div>
-              </div>
-              <!-- card and image section -->
-              <div class="col-12 col-lg-4">
+                <!-- card whith img -->
                 <div class="card my-3 alt-card-img-section">
                   <img src="assets/img/chart.jpg" class="card-img-top" alt="chart">
                   <div class="card-body">

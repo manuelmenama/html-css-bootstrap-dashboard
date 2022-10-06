@@ -81,7 +81,7 @@ aside{
 
 aside ul li a{
     text-decoration: none;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 
 aside ul li a i{
@@ -115,9 +115,14 @@ main .alt-width-small{
     min-width: 105px;
 }
 
-/* section whit accordion */
-/* todo list section */
-/* card and image section */
+main .alt-dim-btn{
+    width: 40px;
+    height: 40px;
+}
+
+/* faq section */
+/* card with checkbox */
+/* card with img */
 main .alt-card-img-section img{
     width: 100%;
 }
