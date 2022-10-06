@@ -96,6 +96,10 @@ main{
 }
 
 /* prossime classi section */
+main .alt-small-offcanvas{
+    display: block !important;
+}
+
 main .alt-class-section img{
     width: 30px;
     object-fit: cover;
@@ -129,7 +133,11 @@ main .alt-card-img-section img{
 
 /* media quary */
 @media screen and (min-width: 768px) {
-    main .offcanvas{
-        display: none;
+    main .alt-offcanvas{
+        display: inline-block !important;
+    }
+    main .alt-small-offcanvas{
+        display: none !important;
     }
 }
+
